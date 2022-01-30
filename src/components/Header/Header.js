@@ -6,11 +6,39 @@ import Logo from '../../assets/svg/logo-mipaquete.svg';
 import { Button } from '../button/Button';
 import './header.scss';
 
+const MenuList = [
+  {
+    id: 0,
+    title: 'Inicio'
+  },
+  {
+    id: 1,
+    title: '¿Cómo funciona?'
+  },
+  {
+    id: 2,
+    title: 'Integra tu tienda online'
+  },
+  {
+    id: 3,
+    title: 'Blogística'
+  },
+  {
+    id: 4,
+    title: 'Puntos mipaquete'
+  },
+];
+
 export const Header = ({ user, onLogin, onLogout, onCreateAccount }) => (
   <header>
     <div className="wrapper">
-      <div>
+      <div className='wrapper__logo'>
         <img src={Logo} alt="Mipaquete" />
+      </div>
+      <div className='wrapper__menu'>
+        {MenuList.map(({ id, title }) => (
+          <li className='wrapper__menu__item' key={id}>{title}</li>
+        ))}
       </div>
       <div>
         {user ? (

@@ -1,10 +1,29 @@
 .wrapper {
-  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   padding: 15px 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  &__logo {
+    padding: 0 65px;
+  }
+
+  &__menu {
+    font-family: "Ubuntu-MediumItalic";
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+
+    &__item {
+      margin: 0 10px;
+      font-size: 18px;
+      color: #353a3d;
+      cursor: pointer;
+    }
+  }
 }
 
 svg {

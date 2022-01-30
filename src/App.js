@@ -1,9 +1,9 @@
-import { Page } from '../src/components/Page/Page';
+import { Register } from './pages/Register/Register';
 
 function App() {
   return (
     <div>
-      <Page />
+      <Register />
     </div>
   );
 }

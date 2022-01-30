@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { Header } from '../Header/Header';
-import './page.scss';
+import { Header } from '../../components/Header/Header';
+import './register.scss';
 
-export const Page = ({ user, onLogin, onLogout, onCreateAccount }) => (
+export const Register = ({ user, onLogin, onLogout, onCreateAccount }) => (
   <article>
     <Header user={user} onLogin={onLogin} onLogout={onLogout} onCreateAccount={onCreateAccount} />
 
@@ -59,13 +59,13 @@ export const Page = ({ user, onLogin, onLogout, onCreateAccount }) => (
     </section>
   </article>
 );
-Page.propTypes = {
+Register.propTypes = {
   user: PropTypes.shape({}),
   onLogin: PropTypes.func.isRequired,
   onLogout: PropTypes.func.isRequired,
   onCreateAccount: PropTypes.func.isRequired,
 };
 
-Page.defaultProps = {
+Register.defaultProps = {
   user: null,
 };
