@@ -1,4 +1,4 @@
-import { Page } from '../src/stories/Page';
+import { Page } from '../src/Page/Page';
 
 function App() {
   return (
