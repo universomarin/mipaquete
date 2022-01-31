@@ -1,7 +1,6 @@
 @import url('../../index.scss');
 
 .wrapper {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   padding: 15px 20px;
   display: flex;
   align-items: center;
@@ -25,6 +24,13 @@
       color: #353a3d;
       cursor: pointer;
     }
+  }
+
+  &__buttons-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
   }
 }
 

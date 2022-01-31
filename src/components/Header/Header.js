@@ -40,13 +40,13 @@ export const Header = ({ user, onLogin, onLogout, onCreateAccount }) => (
           <li className='wrapper__menu__item' key={id}>{title}</li>
         ))}
       </div>
-      <div>
+      <div className='wrapper__buttons-menu'>
         {user ? (
-          <Button size="small" onClick={onLogout} label="Log out" />
+          <Button onClick={onLogout} label="Cerrar sesión" />
         ) : (
           <>
-            <Button size="small" onClick={onLogin} label="Log in" />
-            <Button primary size="small" onClick={onCreateAccount} label="Sign up" />
+            <Button primary onClick={onLogin} label="Ingresa" />
+            <Button secondary onClick={onCreateAccount} label="Regístrate" />
           </>
         )}
       </div>
