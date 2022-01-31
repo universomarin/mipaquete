@@ -1,8 +1,27 @@
-// Primary Typography - Ubuntu-MediumItalic
 @font-face {
   font-family: "Ubuntu-MediumItalic";
   src: url(../assets/fonts/Ubuntu-MediumItalic.ttf) format("ttf");
-  font-weight: 500;
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Ubuntu-Medium";
+  src: url(../assets/fonts/Ubuntu-Medium.ttf) format("ttf");
+  font-weight: normal;
   font-style: medium;
-  font-display: block;
+}
+
+@font-face {
+  font-family: "Ubuntu-LightItalic";
+  src: url(../assets/fonts/Ubuntu-LightItalic.ttf) format("ttf");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Ubuntu-Light";
+  src: url(../assets/fonts/Ubuntu-Light.ttf) format("ttf");
+  font-weight: normal;
+  font-style: normal;
 }

@@ -1,14 +1,14 @@
 import React from 'react';
 
-import { Page } from './Register';
+import { Register } from './Register';
 import * as HeaderStories from '../../components/Header/Header.stories';
 
 export default {
-  title: 'Example/Page',
-  component: Page,
+  title: 'Pages/Register',
+  component: Register,
 };
 
-const Template = (args) => <Page {...args} />;
+const Template = (args) => <Register {...args} />;
 
 export const LoggedIn = Template.bind({});
 LoggedIn.args = {
