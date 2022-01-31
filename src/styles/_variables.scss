@@ -1,0 +1,26 @@
+
+/* Typography */
+$f-first: 'Ubuntu-MediumItalic', sans-serif;
+
+/* Line height */
+$line-height-heading: 1.3;
+$line-height-body: 1.6;
+
+/* Layout */
+$gutter: 1rem;  /* 16px */
+$max-width: 1240px;
+$offcanvas: 65vw;
+$size-header-height: 52px;
+
+/* Media query screens */
+$screen-sm-min: 576px; // Small tablets and large smartphones (landscape view)
+$screen-md-min: 768px; // Small tablets (portrait view)
+$screen-lg-min: 992px; // Tablets and small desktops
+$screen-xl-min: 1024px; // Large tablets and desktops
+
+/* Layers */
+$z-layer-back: -10;
+$z-layer-base: 1;
+$z-layer-tooltip: 10;
+$z-layer-fixed: 100;
+$z-layer-modal: 1000;

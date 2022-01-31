@@ -27,14 +27,21 @@ Secondary.args = {
   label: 'Regístrate',
 };
 
+export const Small = Template.bind({});
+Small.args = {
+  size: 'small',
+  label: 'Entendido',
+};
+
+export const Medium = Template.bind({});
+Medium.args = {
+  size: 'medium',
+  label: 'Cancelar',
+};
+
 export const Large = Template.bind({});
 Large.args = {
   size: 'large',
   label: 'Cancelar',
 };
 
-export const Small = Template.bind({});
-Small.args = {
-  size: 'small',
-  label: 'Entendido',
-};
