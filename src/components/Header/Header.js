@@ -2,6 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import Logo from '../../assets/svg/logo-mipaquete.svg';
+import Home from '../../assets/svg/home.svg';
+import Menu from '../../assets/svg/menu.svg';
 
 import { Button } from '../button/Button';
 import './header.scss';
@@ -31,22 +33,40 @@ const MenuList = [
 
 export const Header = ({ user, onLogin, onLogout, onCreateAccount }) => (
   <header>
-    <div className="wrapper">
+    <div className='wrapper'>
       <div className='wrapper__logo'>
-        <img src={Logo} alt="Mipaquete" />
+        <img src={Logo} alt='Logo Mipaquete' />
       </div>
-      <div className='wrapper__menu'>
+      <ul className='wrapper__menu'>
         {MenuList.map(({ id, title }) => (
           <li className='wrapper__menu__item' key={id}>{title}</li>
         ))}
-      </div>
+      </ul>
       <div className='wrapper__buttons-menu'>
         {user ? (
-          <Button onClick={onLogout} label="Cerrar sesión" />
+          <div className='wrapper__buttons-menu__onLogin'>
+            <h3 className='wrapper__buttons-menu__onLogin--username'>Juan Marin</h3> 
+            <Button size='avatar' onClick={onLogout} label='J' />
+          </div>
         ) : (
           <>
-            <Button primary onClick={onLogin} label="Ingresa" />
-            <Button secondary onClick={onCreateAccount} label="Regístrate" />
+            <Button primary onClick={onLogin} label='Ingresa' />
+            <Button secondary onClick={onCreateAccount} label='Regístrate' />
+          </>
+        )}
+      </div>
+    </div>
+    <div className='wrapper__mobile'>
+      <h3 className='wrapper__mobile__title'>Registro</h3>
+      <div className='wrapper__mobile__options'>
+        {user ? (
+          <div className='wrapper__buttons-menu__onLogin'>
+            <Button size='avatar' onClick={onLogout} label='J' />
+          </div>
+        ) : (
+          <>
+            <img src={Home} alt='Inicio Mipaquete' />
+            <img src={Menu} alt='Menu Mipaquete' />
           </>
         )}
       </div>

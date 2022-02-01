@@ -1,17 +1,21 @@
-@import url('../../index.scss');
+@import '../../styles/styles.scss';
 
 .wrapper {
-  padding: 15px 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  display: none;
+  
+  @include xl {
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 
   &__logo {
     padding: 0 65px;
   }
 
   &__menu {
-    font-family: "Ubuntu-MediumItalic";
+    font-family: $f-first;
     list-style: none;
     display: flex;
     justify-content: flex-start;
@@ -25,16 +29,49 @@
       cursor: pointer;
     }
   }
-
+  
   &__buttons-menu {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 350px;
-  }
-}
 
-svg {
-  display: inline-block;
-  vertical-align: top;
+    &__onLogin {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &--username {
+        font-family: $f-first;
+        font-size: 16px;
+        color: #353a3d;
+        max-width: 120px;
+        font-weight: normal;
+      }
+    }
+
+  }
+
+  &__mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+
+    @include xl {
+      display: none;
+    }
+
+    &__title {
+      font-size: 20px;
+      font-family: $f-first;
+      color: #353a3d;
+      font-weight: 600;
+    }
+
+    &__options {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
 }
